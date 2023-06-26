@@ -1,0 +1,23 @@
+
+
+<div>
+    <input type="text" [(ngModel)]="text" />
+    <button (click)="addTodo()">➕</button>
+  </div>
+  
+  <ul>
+    <li *ngFor="let todo of todos;let i =index">
+      <input type="checkbox" [checked]="todo.done" (click)="toggleDone(todo)" />
+  
+      <span [ngClass]="{ done: todo.done }">{{ todo.item }}</span>
+      <button (click)="deleteItems(i)">❌</button>
+      <!-- <button (click)="editItems(i)">🛠</button> -->
+      <!-- <input type="text" name="task" [value]="inputTask" (input)="changeInput($event)" > -->
+
+
+<!-- <button (click)="DeleteTask()">DELETE</button> -->
+    </li>
+  </ul>
+
+
+

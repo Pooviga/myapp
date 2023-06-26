@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files
+body{
+
+    line-height: 50px;
+    font-weight: normal;
+
+} */
+img{
+    height: 600px;
+    width: 400px;
+    border-radius: 17px;
+    object-fit: fit;
+
+}
+
+
+#parah{
+    
+    text-align: left;
+    color: #7C6E6E;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+#heading{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+#names{
+    display: flex;
+}
