@@ -4,3 +4,6 @@
     background: red;
     margin-top:5px;
 }
+.container{
+    display: flex;
+}

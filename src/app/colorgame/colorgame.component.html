@@ -2,5 +2,9 @@
 <!-- <input type="text" [style.backgroundColor]="clr" (input)="typing($event)"/> -->
 <input type="text" [style.backgroundColor]="clr" [(ngModel)]="clr"/>
 <button (click)="addColor()">Add</button>
-<app-colour-box *ngFor="let color of colors" [clr]="color"></app-colour-box>
+
+<app-colour-box *ngFor="let color of colors,let i =index" [clr]="color">
+</app-colour-box> 
 <h3>{{clr}}</h3>
+
+
